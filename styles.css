@@ -1,0 +1,61 @@
+*{
+  transition: 0.8s;
+}
+:root {
+  --cursor-point: pointer
+}
+img {
+  width: 100%;
+  top: 0px ;
+  left: 0px;
+  z-index: 1;
+}
+button {
+  position: absolute;
+  background-color: rgb(114, 93, 93);
+  opacity: 0;
+  z-index: 2;
+}
+.wrapper {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  aspect-ratio: auto;
+}
+
+
+.b0304 {
+  bottom: 2.3%;
+  left: 47.1%;
+  width: 2.1%;
+  height: 1.7%;
+}
+.i0304 {
+  opacity: 0;
+}
+.b0304:hover + .i0304 {
+  opacity: 1;
+  transition: 0.4s;
+}
+.b0304:hover {
+  cursor: pointer;
+}
+
+
+.b0504 {
+  bottom: 2.3%;
+  left: 65.1%;
+  width: 7.7%;
+  height: 1.7%;
+}
+.i0504 {
+  opacity: 0;
+}
+.b0504:hover + .i0504 {
+  opacity: 1;
+  transition: 0.4s;
+}
+.b0504:hover {
+  cursor: pointer;
+}
