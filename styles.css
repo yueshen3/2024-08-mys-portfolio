@@ -2,7 +2,13 @@
   transition: 0.8s;
 }
 :root {
-  --cursor-point: pointer
+  --cursor-point: pointer;
+  --button-height: 1.7%;
+  --bottom-a: 2.3%;
+  --bottom-b: 5.8%;
+  --transition-back: 0.4s;
+  --opacity-0: 0;
+  --opacity-1: 1;
 }
 img {
   width: 100%;
@@ -25,37 +31,56 @@ button {
 }
 
 
+
 .b0304 {
-  bottom: 2.3%;
+  bottom: var(--bottom-a);
   left: 47.1%;
   width: 2.1%;
-  height: 1.7%;
+  height: var(--button-height);
 }
 .i0304 {
-  opacity: 0;
+  opacity: var(--opacity-0);
 }
 .b0304:hover + .i0304 {
-  opacity: 1;
-  transition: 0.4s;
+  opacity: var(--opacity-1);
+  transition: var(--transition-back);
 }
 .b0304:hover {
-  cursor: pointer;
+  cursor: var(--cursor-point);
 }
 
 
 .b0504 {
-  bottom: 2.3%;
+  bottom: var(--bottom-a);
   left: 65.1%;
   width: 7.7%;
-  height: 1.7%;
+  height: var(--button-height);
 }
 .i0504 {
-  opacity: 0;
+  opacity: var(--opacity-0);
 }
 .b0504:hover + .i0504 {
-  opacity: 1;
-  transition: 0.4s;
+  opacity: var(--opacity-1);
+  transition: var(--transition-back);
 }
 .b0504:hover {
-  cursor: pointer;
+  cursor: var(--cursor-point);
+}
+
+
+.b0505 {
+  bottom: var(--bottom-b);
+  left: 68.3%;
+  width: 2.5%;
+  height: var(--button-height);
+}
+.i0505 {
+  opacity: var(--opacity-0);
+}
+.b0505:hover + .i0505 {
+  opacity: var(--opacity-1);
+  transition: var(--transition-back);
+}
+.b0505:hover {
+  cursor: var(--cursor-point);
 }
