@@ -66,21 +66,3 @@ button {
 .b0504:hover {
   cursor: var(--cursor-point);
 }
-
-
-.b0505 {
-  bottom: var(--bottom-b);
-  left: 68.3%;
-  width: 2.5%;
-  height: var(--button-height);
-}
-.i0505 {
-  opacity: var(--opacity-0);
-}
-.b0505:hover + .i0505 {
-  opacity: var(--opacity-1);
-  transition: var(--transition-back);
-}
-.b0505:hover {
-  cursor: var(--cursor-point);
-}
