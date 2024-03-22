@@ -1,0 +1,36 @@
+/* global setting */
+*{
+  transition: 0.8s;
+}
+body{
+  margin: 0;
+}
+:root {
+  --bottom-a: 2.3%;
+  --bottom-b: 4.1%;
+  --bottom-c: 5.8%;
+  --bottom-d: 7.5%;
+  --bottom-e: 9.2%;
+}
+img {
+  width: 100%;
+  top: 0px ;
+  left: 0px;
+  z-index: 1;
+}
+button {
+  border: none;
+  position: absolute;
+  background-color: rgb(114, 93, 93);
+  opacity: 0;
+  z-index: 2;
+  height: 1.7%;
+}
+.wrapper {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  aspect-ratio: auto;
+}
+
