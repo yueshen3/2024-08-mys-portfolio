@@ -1,0 +1,64 @@
+/* transition with anchor pseudo-classes button to img #i0000 #b0000*/
+#i0108, 
+#i0112, 
+#i0113, 
+#i0114, 
+#i0202, 
+#i0206, 
+#i0301, 
+#i0302, 
+#i0303, 
+#i0304, 
+#i0306, 
+#i0504, 
+#i0505, 
+#i0511, 
+#i0512, 
+#i0513, 
+#i0514,
+#i0001 {
+  opacity: 0;
+}
+#b0108:hover,
+#b0112:hover,
+#b0113:hover,
+#b0114:hover,
+#b0202:hover,
+#b0206:hover,
+#b0301:hover,
+#b0302:hover,
+#b0303:hover,
+#b0304:hover,
+#b0306:hover,
+#b0504:hover,
+#b0505:hover,
+#b0511:hover,
+#b0512:hover,
+#b0513:hover,
+#b0514:hover,
+#b0001:hover {
+  border-style: dashed;
+  cursor: pointer;
+  opacity: 0.8;
+}
+#b0108:focus + #i0108,
+#b0112:focus + #i0112,
+#b0113:focus + #i0113,
+#b0114:focus + #i0114,
+#b0202:focus + #i0202,
+#b0206:focus + #i0206,
+#b0301:focus + #i0301,
+#b0302:focus + #i0302,
+#b0303:focus + #i0303,
+#b0304:focus + #i0304,
+#b0306:focus + #i0306,
+#b0504:focus + #i0504,
+#b0505:focus + #i0505, 
+#b0511:focus + #i0511, 
+#b0512:focus + #i0512, 
+#b0513:focus + #i0513, 
+#b0514:focus + #i0514, 
+#b0001:focus + #i0001 {
+  opacity: 1;
+  transition: 0.4s;
+}
