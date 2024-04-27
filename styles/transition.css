@@ -7,24 +7,7 @@ button:hover {
   cursor: pointer;
   opacity: 0.8;
 }
-#b0108:focus + #i0108,
-#b0112:focus + #i0112,
-#b0113:focus + #i0113,
-#b0114:focus + #i0114,
-#b0202:focus + #i0202,
-#b0206:focus + #i0206,
-#b0301:focus + #i0301,
-#b0302:focus + #i0302,
-#b0303:focus + #i0303,
-#b0304:focus + #i0304,
-#b0306:focus + #i0306,
-#b0504:focus + #i0504,
-#b0505:focus + #i0505, 
-#b0511:focus + #i0511, 
-#b0512:focus + #i0512, 
-#b0513:focus + #i0513, 
-#b0514:focus + #i0514, 
-#b0001:focus + #i0001 {
+.after {
   opacity: 1;
   transition: 0.4s;
 }
