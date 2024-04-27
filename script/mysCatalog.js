@@ -19,14 +19,11 @@ const fileName = [
   "0514", 
 ]
 
-let divInitial = `<div id="icover"><img src="images/M_YS_cover.png"></div>`;
 let divElementList = '';
 for (let i = 0; i < fileName.length; i++) {
   const name = fileName[i];
   const html = `<button id="b${name}"></button>
-<div class="image" id="i${name}"><img src="images/M_YS_${name}.png"></div>`;
+<section class="image" id="i${name}"><img src="images/M_YS_${name}.png"></section>`;
   divElementList += html;
 }
-document.querySelector('.wrapper').innerHTML = divInitial + divElementList;
-
-console.log(divElementList);
+document.querySelector('.wrapper2').innerHTML = divElementList;
