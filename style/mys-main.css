@@ -1,0 +1,36 @@
+/* global setting */
+*{
+  /* font-family: Verdana;
+  font: 1rem 'Fira Sans', sans-serif; */
+  font-family: "Noto Sans SC", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 370;
+  size: var(--font-normal-size);
+  color: var(--color-text-typical);
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100%;
+  background-color: var(--color-background);
+}
+:root {
+  --icon-size: 50px;
+  --font-normal-size: 16px;
+  --margin-standard: 25px;
+  --margin-small: 10px;
+  --icon-fill: #000000;
+  --color-text-typical: #40BFBF;
+  --color-stroke-typical: #40BFBF;
+  --color-background: white;
+}
+a:hover{
+  /* background-color: #f0f0f0; */
+  /* scale: 102%; */
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  transition: all 0.5s;
+}

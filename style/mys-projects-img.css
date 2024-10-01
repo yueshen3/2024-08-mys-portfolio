@@ -1,0 +1,35 @@
+.wrapper-projects {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: var(--color-background);
+  flex-wrap: wrap;
+  padding: 60px 20px;
+}
+
+.wrapper-projects img{
+  width: 100%;
+}
+.wrapper-projects a{
+  margin: 20px var(--margin-standard);
+}
+/* .wrapper-projects {
+  columns: 300px;
+} */
+
+@media screen and (900px <= width) {
+  .wrapper-projects a{
+    width: calc(33.33% - var(--margin-standard)*2);
+  }
+}
+@media screen and (600px <= width < 900px) {
+  .wrapper-projects a{ 
+    width: calc(50% - var(--margin-standard)*4);
+  }
+}
+@media screen and (300px <= width < 600px) {
+  .wrapper-projects a{ 
+    width: calc(100% - var(--margin-standard)*6);
+  }
+}

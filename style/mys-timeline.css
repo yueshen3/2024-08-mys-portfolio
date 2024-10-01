@@ -1,0 +1,28 @@
+.time-line {
+  z-index: 99;
+}
+
+.svg-lines,
+.all-years {
+  position: fixed;
+  overflow: hidden;
+  font-size: 30px;
+  left: 20px;
+}
+
+.svg-lines {
+  bottom: 50px;
+  width: 80%;
+	padding: 0px;
+	stroke: black;
+	stroke-width: 2px;
+}
+
+.all-years {
+  bottom: 25px;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  background-color: transparent;
+}
