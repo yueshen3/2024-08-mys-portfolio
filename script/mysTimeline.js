@@ -1,33 +1,34 @@
-const time = [];
-const startYear = '09';
-let recordYear = startYear;
-const endYear = '28';
-for (let i = 0; i <= endYear - startYear; i++) {
-  time[i] = recordYear;
+import {dataScalerUnit} from './mysData.js';
+import {dataStartYear} from './mysData.js';
+import {dataEndYear} from './mysData.js';
+
+const arrayYears = [];
+let recordYear = dataStartYear;
+for (let i = 0; i <= dataEndYear - dataStartYear; i++) {
+  arrayYears[i] = recordYear.toString();
   recordYear ++;
 }
 
-const yearWidth = 70;
-const yearHeight = 30;
-let paraTime = '';
-time.forEach((e, i) => {
-  paraTime += `<p class="the-year">${e}</p>`;
+const yearWidth = 12 * dataScalerUnit;
+let domTime = '';
+arrayYears.forEach((e, i) => {
+  domTime += `<p>${e}</p>`;
 })
-document.querySelector('.all-years').innerHTML = paraTime;
-  
-let startPointX = 20;
-let timeLineMark = [];
-let verticalLineHeight = 25;
-for (let i = 0; i <= endYear - startYear; i++) {
-  const html = `<line x1="${startPointX}" y1="0" 
-  x2="${startPointX}" y2="${verticalLineHeight - 4}"/>`;
+document.querySelector('.all-years').innerHTML = domTime;
+
+let startPointX = 0;
+let htmlSvgVertical = [];
+for (let i = 0; i <= dataEndYear - dataStartYear; i++) {
+  const e = `<line x1="${startPointX}" y1="0" 
+  x2="${startPointX}" y2="${window.innerHeight}"/>`;
   startPointX += yearWidth;
-  timeLineMark[i] = html;
+  htmlSvgVertical[i] = e;
 }
-const timeLineHori = `<line x1="1" y1="${verticalLineHeight - 6}" 
-x2="${yearWidth * time.length}" y2="${verticalLineHeight - 6}"
-style = "stroke-width: 6px;"/>`
-document.querySelector('.svg-lines').innerHTML = timeLineMark + timeLineHori;
 
-
-// console.log(timeLineMark + timeLineHori);
+let svgHoriStrokeWidth = 20;
+let svgHeight = document.querySelector('.time-line').offsetHeight;
+const htmlSvgHorizontal = `<line x1="0" y1="${svgHeight - svgHoriStrokeWidth / 2}" 
+x2="${window.innerWidth}" y2="${svgHeight - svgHoriStrokeWidth / 2}" 
+style = "stroke-width: ${svgHoriStrokeWidth};"/>`
+document.querySelector('.svg-lines').innerHTML = htmlSvgVertical + htmlSvgHorizontal;
+document.querySelector('.svg-lines').setAttribute("height", `${svgHeight}`)
