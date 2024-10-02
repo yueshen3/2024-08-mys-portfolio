@@ -24,12 +24,19 @@ originalInfoData.forEach((e, i) => {
 export const dataInfoDescription = fullInfoDescription;
 
 
+const startYear = '2009';
+const startMonth = '1';
+const scalerUnit = 5;
+const endYear = '2028';
+const endMonth = '12';
+
+
 export const dataDates = originalDatesData;
 export const dataInfo = originalInfoData;
 export const dataProjects = originalProjectsData;
 export const dataPhases = originalPhasesData;
-
-
-
-
-
+export const dataStartYear = startYear;
+export const dataStartMonth = startMonth;
+export const dataScalerUnit = scalerUnit;
+export const dataEndYear = endYear;
+export const dataEndMonth = endMonth;
