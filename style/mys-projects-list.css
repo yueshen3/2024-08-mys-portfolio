@@ -10,7 +10,7 @@
   width: calc(100vw - var(--margin-standard) * 2);
   height: var(--font-normal-size);
   margin: var(--margin-small) 0;
-  z-index: 99;
+  z-index: 2;
   color: black;
 }
 
