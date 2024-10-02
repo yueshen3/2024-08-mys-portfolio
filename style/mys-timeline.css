@@ -1,28 +1,27 @@
 .time-line {
-  z-index: 99;
-}
-
-.svg-lines,
-.all-years {
+  z-index: 3;
   position: fixed;
-  overflow: hidden;
-  font-size: 30px;
-  left: 20px;
+  left: var(--margin-standard);
+  width: calc(100vw - var(--margin-standard) * 2);
+  height: calc(100vh - var(--margin-standard) * 3 - var(--icon-size));
+  bottom: var(--margin-standard);
 }
 
 .svg-lines {
-  bottom: 50px;
-  width: 80%;
-	padding: 0px;
-	stroke: black;
-	stroke-width: 2px;
+	stroke: rgb(194, 194, 194);
+  width: 100%;
 }
 
 .all-years {
-  bottom: 25px;
-  width: 80%;
+  position: fixed;
   display: flex;
-  flex-direction: row;
-  text-align: left;
-  background-color: transparent;
+  width: 1200px;
+  bottom: var(--margin-standard);
+}
+
+.all-years p {
+  justify-content: center;
+  align-content: center;
+  width: 60px;
+  color: white;
 }
