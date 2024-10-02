@@ -1,7 +1,7 @@
-import originalProjectsData from '/2024-08 mys-portfolio/data/projects.json' with { type: 'json'};
-import originalInfoData from '/2024-08 mys-portfolio/data/info.json' with { type: 'json'};
-import originalDatesData from '/2024-08 mys-portfolio/data/dates.json' with { type: 'json'};
-import originalPhasesData from '/2024-08 mys-portfolio/data/phases.json' with { type: 'json'};
+import originalProjectsData from '../data/projects.json' with { type: 'json'};
+import originalInfoData from '../data/info.json' with { type: 'json'};
+import originalDatesData from '../data/dates.json' with { type: 'json'};
+import originalPhasesData from '../data/phases.json' with { type: 'json'};
 
 let modifiedProjectID = [];
 originalProjectsData.forEach((e, i) => {
