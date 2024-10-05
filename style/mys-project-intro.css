@@ -1,0 +1,10 @@
+.wrapper-project-card {
+  position: absolute;
+  display: flex;
+  left: var(--margin-standard);
+  top: var(--margin-standard);
+}
+
+img {
+  width: 100%;
+}
