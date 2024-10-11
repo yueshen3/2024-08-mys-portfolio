@@ -31,14 +31,21 @@ modifiedDataProjects.forEach((e, i) => {
 })
 // console.log(modifiedDataProjects);
 
+const listWidth = document.body.clientWidth;
+// const listHeight = document.body.clientHeight;
+
 let htmlProjectName = '';
 let htmlProjectSvg = '';
 for (let e of modifiedDataProjects) {
   htmlProjectName += `<li class="project-name-li">${e['projectName']}</li>`;
-  htmlProjectSvg += `<svg height="10" class="project-svg-li">
-  <line x1="${e['startPoint']}" y1="17" x2="${e['endPoint']}" y2="17"></svg>`;
+  htmlProjectSvg += `<li class="project-svg-li"><svg width = "${listWidth}px">
+  <line x1="${e['startPoint']}" y1="5" x2="${e['endPoint']}" y2="5"></svg></li>`;
 }
 
 document.querySelector('.projects-name-ul').innerHTML = htmlProjectName;
 document.querySelector('.projects-svg-ul').innerHTML = htmlProjectSvg;
+
+
+// document.querySelector('.project-svg-li').setAttribute("width", `${listWidth}px`);
+// document.querySelector('.project-name-ul').setAttribute("height", `${listHeight}px`);
 

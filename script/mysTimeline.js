@@ -17,7 +17,7 @@ arrayYears.forEach((e, i) => {
 document.querySelector('.all-years').innerHTML = domTime;
 
 const listHeight = document.body.clientHeight;
-const listWidth = (dataEndYear - dataStartYear + 1) * yearLength;
+const listWidth = document.body.clientWidth;
 console.log(listHeight);
 
 let startPointX = 0;
@@ -32,9 +32,10 @@ for (let i = 0; i <= dataEndYear - dataStartYear; i++) {
 // const htmlSvgHorizontal = `<line x1="0" y1="1" x2="${listWidth}" y2="1" 
 // style = "stroke-width: 2;"/>`
 document.querySelector('.svg-lines').innerHTML = htmlSvgVertical;
-document.querySelector('.time-line').setAttribute("width", listWidth)
-document.querySelector('.time-line').setAttribute("height", listHeight);
 document.querySelector('.svg-lines').setAttribute("height", listHeight);
+document.getElementById('wrapper-all').style.width = `${listWidth}px`;
+document.getElementById('wrapper-all').style.height = `${listHeight}px`;
+// document.querySelector('.wrapper-all').setAttribute("height", listHeight);
 
 // document.body.style.height = listHeight + "px";
 // document.body.style.width = listWidth + "px";

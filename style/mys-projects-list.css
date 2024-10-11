@@ -1,9 +1,9 @@
 body {
   width: 1400px;
-  height: 3700px;
+  height: 4000px;
 }
 
-.wrapper-all {
+#wrapper-all {
   display: flex;
   position: absolute;
   margin: calc(var(--margin-standard) * 3 + var(--icon-size)) 0 0 var(--margin-standard);
@@ -12,6 +12,7 @@ body {
 .projects-name-ul,
 .projects-svg-ul {
   display: grid;
+  height: 4000px;
 }
 
 .projects-name-ul {
@@ -24,24 +25,20 @@ body {
 .projects-svg-ul {
   position: absolute;
   z-index: 2;
-  width: 2000px;
+}
+
+.project-name-li,
+.project-svg-li{
+  height: var(--font-normal-size);
+  margin: var(--margin-small) 0;
 }
 
 .project-name-li{
-  width: calc(100vw - var(--margin-standard) * 2);
-  height: var(--font-normal-size);
-  margin: var(--margin-small) 0;
   z-index: 2;
   color: black;
 }
 
-.project-svg-li{
-  width: calc(100vw - var(--margin-standard) * 2);
-  height: calc(var(--font-normal-size) + 6px);
-  margin: calc(var(--margin-small) - 3px) 0;
-}
-
 ul svg{
   stroke: var(--color-stroke-typical);
-  stroke-width: calc(var(--font-normal-size) * 1.8);
+  stroke-width: calc(var(--font-normal-size) * 1.9);
 }
