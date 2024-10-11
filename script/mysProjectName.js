@@ -36,8 +36,9 @@ let htmlProjectSvg = '';
 for (let e of modifiedDataProjects) {
   htmlProjectName += `<li class="project-name-li">${e['projectName']}</li>`;
   htmlProjectSvg += `<svg height="10" class="project-svg-li">
-  <line x1="${e['startPoint']}" y1="12" x2="${e['endPoint']}" y2="12"></svg>`;
+  <line x1="${e['startPoint']}" y1="17" x2="${e['endPoint']}" y2="17"></svg>`;
 }
 
 document.querySelector('.projects-name-ul').innerHTML = htmlProjectName;
 document.querySelector('.projects-svg-ul').innerHTML = htmlProjectSvg;
+

@@ -1,9 +1,30 @@
+body {
+  width: 1400px;
+  height: 3700px;
+}
+
+.wrapper-all {
+  display: flex;
+  position: absolute;
+  margin: calc(var(--margin-standard) * 3 + var(--icon-size)) 0 0 var(--margin-standard);
+}
+
 .projects-name-ul,
 .projects-svg-ul {
-  position: absolute;
   display: grid;
+}
+
+.projects-name-ul {
   left: var(--margin-standard);
   top: calc(var(--margin-standard) * 2 + var(--icon-size));
+  position: sticky;
+  z-index: 3;
+}
+
+.projects-svg-ul {
+  position: absolute;
+  z-index: 2;
+  width: 2000px;
 }
 
 .project-name-li{
@@ -22,5 +43,5 @@
 
 ul svg{
   stroke: var(--color-stroke-typical);
-  stroke-width: calc(var(--font-normal-size) * 1.2);
+  stroke-width: calc(var(--font-normal-size) * 1.8);
 }

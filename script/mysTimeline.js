@@ -16,24 +16,25 @@ arrayYears.forEach((e, i) => {
 })
 document.querySelector('.all-years').innerHTML = domTime;
 
+const listHeight = document.body.clientHeight;
+const listWidth = (dataEndYear - dataStartYear + 1) * yearLength;
+console.log(listHeight);
+
 let startPointX = 0;
 let htmlSvgVertical = [];
 for (let i = 0; i <= dataEndYear - dataStartYear; i++) {
   const e = `<line x1="${startPointX}" y1="0" 
-  x2="${startPointX}" y2="${window.innerHeight}"/>`;
+  x2="${startPointX}" y2="${listHeight}"/>`;
   startPointX += yearLength;
   htmlSvgVertical[i] = e;
 }
 
-let svgHoriStrokeWidth = 20;
-let svgHeight = document.querySelector('.time-line').offsetHeight;
-const htmlSvgHorizontal = `<line x1="0" y1="${svgHeight - svgHoriStrokeWidth / 2}" 
-x2="${(dataEndYear - dataStartYear + 1) * yearLength}" 
-y2="${svgHeight - svgHoriStrokeWidth / 2}" 
-style = "stroke-width: ${svgHoriStrokeWidth};"/>`
-document.querySelector('.svg-lines').innerHTML = htmlSvgVertical + htmlSvgHorizontal;
-document.querySelector('.svg-lines').setAttribute("height", `${svgHeight}`)
+// const htmlSvgHorizontal = `<line x1="0" y1="1" x2="${listWidth}" y2="1" 
+// style = "stroke-width: 2;"/>`
+document.querySelector('.svg-lines').innerHTML = htmlSvgVertical;
+document.querySelector('.time-line').setAttribute("width", listWidth)
+document.querySelector('.time-line').setAttribute("height", listHeight);
+document.querySelector('.svg-lines').setAttribute("height", listHeight);
 
-
-document.body.style.height = 3750 + "px";
-document.body.style.width = (dataEndYear - dataStartYear + 1) * yearLength + "px";
+// document.body.style.height = listHeight + "px";
+// document.body.style.width = listWidth + "px";
