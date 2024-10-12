@@ -45,7 +45,3 @@ for (let e of modifiedDataProjects) {
 document.querySelector('.projects-name-ul').innerHTML = htmlProjectName;
 document.querySelector('.projects-svg-ul').innerHTML = htmlProjectSvg;
 
-
-// document.querySelector('.project-svg-li').setAttribute("width", `${listWidth}px`);
-// document.querySelector('.project-name-ul').setAttribute("height", `${listHeight}px`);
-

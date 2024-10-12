@@ -8,6 +8,16 @@
   z-index: 100;
 }
 
+.header-background{
+  position: fixed;
+  width: 100vw;
+  height: calc(var(--icon-size) + 2 * var(--margin-standard));
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  z-index: 8;
+}
+
 nav .nav-list{
   position: fixed;
   list-style: none;

@@ -1,5 +1,6 @@
 let navContents = `
 <a href="#" class="nav-icon"><img src="svg/mys-icon.svg"></a>
+<div class="header-background"></div>
 <ul class="nav-list">
 <li><a href="mys-home.html"><b>H</b>OME</a></li>
 <li><a href="mys-timeline.html"><b>T</b>IMELINE</a></li>
