@@ -18,7 +18,6 @@ document.querySelector('.all-years').innerHTML = domTime;
 
 const listHeight = document.body.clientHeight;
 const listWidth = document.body.clientWidth;
-console.log(listHeight);
 
 let startPointX = 0;
 let htmlSvgVertical = [];
@@ -35,6 +34,7 @@ document.querySelector('.svg-lines').innerHTML = htmlSvgVertical;
 document.querySelector('.svg-lines').setAttribute("height", listHeight);
 document.getElementById('wrapper-all').style.width = `${listWidth}px`;
 document.getElementById('wrapper-all').style.height = `${listHeight}px`;
+document.querySelector(".all-years").style.width = `${startPointX}px`;
 // document.querySelector('.wrapper-all').setAttribute("height", listHeight);
 
 // document.body.style.height = listHeight + "px";

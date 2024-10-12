@@ -25,8 +25,10 @@ body {
   --margin-small: 10px;
   --icon-fill: #000000;
   --color-text-typical: #40BFBF;
+  --color-text-paragraph: rgb(0, 0, 0);
   --color-stroke-typical: #40BFBF;
   --color-background: white;
+  --color-stroke:rgb(194, 194, 194)
 }
 a:hover{
   /* background-color: #f0f0f0; */

@@ -1,5 +1,5 @@
 body {
-  width: 1400px;
+  width: 2800px;
   height: 4000px;
 }
 
@@ -35,7 +35,7 @@ body {
 
 .project-name-li{
   z-index: 2;
-  color: black;
+  color: var(--color-text-paragraph);
 }
 
 ul svg{

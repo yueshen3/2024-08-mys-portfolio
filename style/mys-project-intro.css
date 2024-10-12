@@ -1,10 +1,15 @@
 .wrapper-project-card {
   position: absolute;
-  display: flex;
+  display: grid;
   left: var(--margin-standard);
   top: var(--margin-standard);
+  width: calc(100vw - var(--margin-standard) * 2);
 }
 
 img {
   width: 100%;
+}
+
+li {
+  color: var(--color-text-paragraph);
 }

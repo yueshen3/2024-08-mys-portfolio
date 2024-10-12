@@ -1,8 +1,7 @@
-import {dataProjectID} from './mysData.js';
+import {curatedProjectID} from "./mysData.js";
 
-console.log(dataProjectID);
 let dataProjectIDsrc = [];
-dataProjectID.forEach((e, i) => {
+curatedProjectID.forEach((e, i) => {
   dataProjectIDsrc.push(`image/${e.replaceAll(' ', '')}_0000.png`);
 })
 dataProjectIDsrc.toString();

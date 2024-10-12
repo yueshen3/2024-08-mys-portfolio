@@ -7,6 +7,8 @@ import {dataScalerUnit} from './mysData.js';
 
 const groupDataDates = Object.groupBy(dataDates, ({ projectID }) => projectID);
 const arrayGroupDataDates = Object.keys(groupDataDates).map((e) => [e, groupDataDates[e]]);
+// console.log(dataDates);
+// console.log(groupDataDates);
 // console.log(arrayGroupDataDates);
 
 function getTime (e, i) {
@@ -23,16 +25,17 @@ for (let e of arrayGroupDataDates) {
   }
   levelB.push(levelAB);
 }
+// console.log(levelB)
+
 
 let modifiedDataProjects = dataProjects;
 modifiedDataProjects.forEach((e, i) => {
   Object.defineProperties (e, {'startPoint' : {value: levelB[i][0] * dataScalerUnit}})
   Object.defineProperties (e, {'endPoint' : {value: dataScalerUnit * (Math.max(...levelB[i]) + 1)}})
 })
-// console.log(modifiedDataProjects);
+console.log(modifiedDataProjects);
 
 const listWidth = document.body.clientWidth;
-// const listHeight = document.body.clientHeight;
 
 let htmlProjectName = '';
 let htmlProjectSvg = '';
