@@ -1,19 +1,22 @@
 import {curatedProjectID} from "./mysData.js";
+import {curatedProjectName} from "./mysData.js";
 
-let dataProjectIDsrc = [];
-curatedProjectID.forEach((e, i) => {
-  dataProjectIDsrc.push(`image/${e.replaceAll(' ', '')}_0000.png`);
-})
-dataProjectIDsrc.toString();
+
+function imgSrc (start) {
+  return `image/${curatedProjectID[start].replaceAll(' ', '')}_0000.png`
+}
 let image = document.getElementById("home-gallery");
-let imageStart = Math.floor(Math.random()*dataProjectIDsrc.length);
-image.src = dataProjectIDsrc[imageStart];
+let anchor = document.getElementById("home-gallery-wrapper");
+console.log(anchor);
+let imageStart = Math.floor(Math.random()*curatedProjectID.length);
+image.src = imgSrc(imageStart);
 setInterval(function(){
-  if (imageStart < (dataProjectIDsrc.length - 1)){
+  if (imageStart < (curatedProjectID.length - 1)){
     imageStart ++;
   } else {
     imageStart = 0;
   }
-  image.src = dataProjectIDsrc[imageStart];
+  image.src = imgSrc(imageStart);
+  anchor.href = `mys-project-intro.html?projectID=${curatedProjectID[imageStart]}
+  &projectName=${curatedProjectName[imageStart]}`
 }, 5000);
-

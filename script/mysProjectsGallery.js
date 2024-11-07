@@ -5,7 +5,7 @@ let htmlProjectCard = [];
 curatedProjectID.forEach((e, i) => {
   htmlProjectCard += `<a href="mys-project-intro.html?projectID=${e}
   &projectName=${curatedProjectName[i]}">
-  <img src="image/${e.replaceAll(" ", "")}_0000.png"></a>`;
+  <img src="image/${e.replaceAll(" ", "")}_0000.png">no image yet</a>`;
 })
 document.querySelector(".wrapper-projects").innerHTML = htmlProjectCard;
 

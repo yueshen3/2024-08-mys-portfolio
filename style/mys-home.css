@@ -13,7 +13,7 @@
   z-index: 1;
 }
 
-.home-gallery-wrapper {
+#home-gallery-wrapper {
   position: absolute;
   width: calc(100vw - var(--margin-standard) * 3 - var(--icon-size));
   height: calc(100vh - var(--margin-standard) * 3 - var(--icon-size));

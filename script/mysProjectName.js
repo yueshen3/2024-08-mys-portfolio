@@ -40,7 +40,9 @@ const listWidth = document.body.clientWidth;
 let htmlProjectName = '';
 let htmlProjectSvg = '';
 for (let e of modifiedDataProjects) {
-  htmlProjectName += `<li class="project-name-li">${e['projectName']}</li>`;
+  htmlProjectName += `<a href="mys-project-intro.html?projectID=${e["projectID"]}
+  &projectName=${e["projectName"]}">
+  <li class="project-name-li">${e['projectName']}</li></a>`;
   htmlProjectSvg += `<li class="project-svg-li"><svg width = "${listWidth}px">
   <line x1="${e['startPoint']}" y1="5" x2="${e['endPoint']}" y2="5"></svg></li>`;
 }
