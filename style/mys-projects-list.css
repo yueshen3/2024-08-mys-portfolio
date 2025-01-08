@@ -35,7 +35,8 @@ body {
 
 .project-name-li{
   z-index: 2;
-  color: var(--color-text-paragraph);
+  color: var(--color-text-paragraph);  
+  text-transform: capitalize;
 }
 
 ul svg{
