@@ -17,11 +17,11 @@ const projectDescription = dataInfo[dataInfoIndex].discription;
 
 let htmlIntroCard = `<img src="image/${projectID.replaceAll(' ', '')}_0000.png">
 <table><tbody>
-<tr><th>Code</th><td>${projectID}</td></tr>
+<tr><th class="first-row">Code</th><td class="first-row">${projectID}</td></tr>
 <tr><th>Name</th><td>${projectName}</td></tr>
 <tr><th>Location</th><td>${projectLocation}</td></tr>
 <tr><th>Discipline</th><td>${projectDiscipline}</td></tr>
-<tr><th>GFA (square feet)</th><td>${projectGArea}</td></tr>
+<tr><th>Gross Area</th><td>${Intl.NumberFormat('en-US').format(projectGArea)} sf</td></tr>
 <tr><th>Program</th><td>${projectProgram}</td></tr>
 <tr><th>Description</th><td>${projectDescription}</td></tr>
 </table></tbody>

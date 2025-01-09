@@ -18,6 +18,10 @@ body {
   height: 100%;
   background-color: var(--color-background);
 }
+h1 {
+  font-size: var(--font-normal-size);
+  color: var(--color-text-paragraph);
+}
 :root {
   --icon-size: 50px;
   --font-normal-size: 16px;

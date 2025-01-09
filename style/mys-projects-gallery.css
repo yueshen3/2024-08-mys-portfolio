@@ -10,7 +10,8 @@
 }
 
 .wrapper-projects img{
-  width: 100%;
+  justify-content: center;
+  width: calc(100% - var(--margin-standard));
 }
 .wrapper-projects a{
   aspect-ratio: 4 / 5;

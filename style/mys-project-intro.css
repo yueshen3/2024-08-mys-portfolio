@@ -10,7 +10,19 @@ img {
   width: 100%;
 }
 
+table {
+  margin-top: var(--margin-standard);
+  border-collapse: collapse;
+}
 th, td {
   text-align: left;
   color: var(--color-text-paragraph);
+  border-top: 1px solid var(--color-stroke);
+  align-content: start;
+}
+th {
+  width: calc(var(--icon-size) * 3);
+}
+.first-row {
+  border-top: 0px;
 }
