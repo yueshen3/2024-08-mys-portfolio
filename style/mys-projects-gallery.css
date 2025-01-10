@@ -16,6 +16,9 @@
 .wrapper-projects a{
   aspect-ratio: 4 / 5;
 }
+.wrapper-projects a:hover{
+  z-index: 2;
+}
 /* .wrapper-projects a{
   margin: 20px var(--margin-standard);
 } */

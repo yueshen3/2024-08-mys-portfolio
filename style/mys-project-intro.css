@@ -4,6 +4,7 @@
   left: var(--margin-standard);
   top: var(--margin-standard);
   width: calc(100vw - var(--margin-standard) * 2);
+  padding: 0 0 calc(var(--margin-standard) * 2) 0;
 }
 
 img {
