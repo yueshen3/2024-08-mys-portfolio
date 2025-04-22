@@ -1,0 +1,16 @@
+/* .home-icon img{
+  width: var(--icon-size);
+  height: var(--icon-size);
+} */
+
+.home-icon-wrapper {
+  width: var(--icon-size);
+  height: var(--icon-size);
+  position: absolute;
+  top: var(--margin-standard);
+  left: var(--margin-standard);
+  background-color: var(--color-background);
+  z-index: 1;
+}
+
+
