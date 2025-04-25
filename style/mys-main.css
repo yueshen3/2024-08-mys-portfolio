@@ -2,11 +2,11 @@
 *{
   /* font-family: Verdana;
   font: 1rem 'Fira Sans', sans-serif; */
+  /* font-weight: 370; */
   font-family: "Noto Sans SC", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 370;
-  size: var(--font-normal-size);
-  color: var(--color-text-typical);
+  font-size: var(--font-normal-size);
+  color: var(--color-text-paragraph);
   text-decoration: none;
   margin: 0;
   padding: 0;
@@ -18,10 +18,12 @@ body {
   height: 100%;
   background-color: var(--color-background);
 }
-h1 {
+
+p {
   font-size: var(--font-normal-size);
   color: var(--color-text-paragraph);
 }
+
 :root {
   --icon-size: 50px;
   --font-normal-size: 16px;

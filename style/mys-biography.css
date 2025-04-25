@@ -1,16 +1,20 @@
-/* .home-icon img{
-  width: var(--icon-size);
-  height: var(--icon-size);
-} */
-
-.home-icon-wrapper {
-  width: var(--icon-size);
-  height: var(--icon-size);
+.wrapper-paragraph {
   position: absolute;
-  top: var(--margin-standard);
-  left: var(--margin-standard);
-  background-color: var(--color-background);
-  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  left: calc(var(--margin-standard));
+  right: calc(var(--margin-standard));
+  top: calc(var(--margin-standard) * 2 + var(--icon-size));
+  /* flex-wrap: wrap; */
+}
+
+.left-paragraph {
+  width: 120px;
+}
+
+.right-paragraph {
+  margin-left: calc(var(--margin-standard));;
 }
 
 

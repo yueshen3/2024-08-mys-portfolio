@@ -37,6 +37,7 @@ nav .nav-list{
 
 ul li a b{
   font-size: calc(var(--icon-size) * 1);
+  color: var(--color-text-typical);
 }
 
 ul li{
@@ -48,6 +49,7 @@ ul li{
 }
 
 ul li a{
+  color: var(--color-text-typical);
   width: 100%;
   height: 100%;
 }
